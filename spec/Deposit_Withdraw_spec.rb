@@ -1,6 +1,6 @@
 require 'deposit_withdraw'
 
-describe Deposit_Withdraw do
+describe DepositWithdraw do
   it 'exists' do
 
   end
