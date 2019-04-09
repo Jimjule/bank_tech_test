@@ -134,3 +134,34 @@ GREEN
 -----------
 
 # Screen Recording 5
+
+FEATURE TEST
+- Expecting new transactions to be pushed to the front of the transactions array
+
+RED
+It is at the front, but not joined
+
+Made current a string
+
+GREEN
+
+
+FEATURE TEST
+- Withdraw method to deduct money from the account and push to transactions
+
+Copied deposit method, changed to withdraw, now - not +, and renamed current
+
+GREEN
+
+FEATURE TEST
+- Testing withdraw and deposit together, working as intended
+
+GREEN
+
+
+FEATURE TEST
+- Testing that Statement class works with new deposit and withdraw methods, working as intended
+
+GREEN
+
+-----------

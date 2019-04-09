@@ -10,11 +10,22 @@ class DepositWithdraw
   end
 
   def deposit(amount)
-    # @transactions << '09/04/2019 || 5000.00 || || 7500.00'
-    current = []
-    @balance += amount
-    current.push(DateTime.now.strftime("%d/%m/%Y") + ' || ' + amount.to_s + '.00' + ' || || ' + @balance.to_s + '.00')
 
-    return current[0]
+    current = ''
+
+    @balance += amount
+    current = DateTime.now.strftime("%d/%m/%Y") + ' || ' + amount.to_s + '.00' + ' || || ' + @balance.to_s + '.00'
+    @transactions.insert(0, current)
+    print @transactions
+  end
+
+  def withdraw(amount)
+
+    string_withdraw = ''
+
+    @balance -= amount
+    current = DateTime.now.strftime("%d/%m/%Y") + ' || || ' + amount.to_s + '.00' + ' || ' + @balance.to_s + '.00'
+    @transactions.insert(0, current)
+    print @transactions
   end
 end

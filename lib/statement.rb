@@ -7,7 +7,6 @@ class Statement
   end
 
   def show
-    p @d.transactions
     print 'date || credit || debit || balance' + @d.transactions[0]
   end
 

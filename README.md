@@ -31,5 +31,4 @@ date || credit || debit || balance
 
 # Progress
 
-Hit Minimum described in plan, except that new posts are not displayed chronologically.
-Deposit function also exists, Withdraw to come soon.
+Hit Minimum described in plan, plus the withdraw and deposit methods described.
