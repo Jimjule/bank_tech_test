@@ -16,7 +16,7 @@ class DepositWithdraw
     @balance += amount
     current = DateTime.now.strftime("%d/%m/%Y") + ' || ' + amount.to_s + '.00' + ' || || ' + @balance.to_s + '.00'
     @transactions.insert(0, current)
-    print @transactions
+    print @transactions # Necessary?
   end
 
   def withdraw(amount)
@@ -26,6 +26,6 @@ class DepositWithdraw
     @balance -= amount
     current = DateTime.now.strftime("%d/%m/%Y") + ' || || ' + amount.to_s + '.00' + ' || ' + @balance.to_s + '.00'
     @transactions.insert(0, current)
-    print @transactions
+    print @transactions # Necessary?
   end
 end

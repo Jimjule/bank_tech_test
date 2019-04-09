@@ -107,3 +107,16 @@ or
 - Push the formatted date, amount added or debited, and balance to the array
 
 ------------------
+
+# Account class
+
+  The statement class instantiates deposit_withdraw, but doesn't affect the contents, so the two classes are effectively isolated. To make new transactions and print a statement in the same session, the account class is needed to act as controller, instantiating the other two classes on a new session. Every necessary operation can then be completed from there.
+
+- Has a method to call statement.show
+- Has a method to call deposit_withdraw.withdraw
+- Has a method to call deposit_withdraw.deposit
+
+
+# Refactor
+
+  Once the account class has been implemented, it's worth refactoring the classes to comply with good coding standards. Potential areas of concern are overloaded classes, and the SRP.

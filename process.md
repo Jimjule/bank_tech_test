@@ -160,8 +160,14 @@ GREEN
 
 
 FEATURE TEST
-- Testing that Statement class works with new deposit and withdraw methods, working as intended
+- Testing that Statement class works with new deposit and withdraw methods
 
-GREEN
+RED
+These classes do not work together because the statement class calls a new instance of deposit_withdraw when run. A higher-level class is needed to instantiate and control both classes.
 
 -----------
+
+# Screen Recording 6
+
+FEATURE TEST
+- Account class can call the statement.show method
