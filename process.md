@@ -34,6 +34,8 @@ date || credit || debit || balance
 
 -----------
 
+# Screen Recording 2
+
 FEATURE TEST
 - Testing that statement.show returns the same result when reading the following statements from Deposit_Withdraw:
 
@@ -58,3 +60,77 @@ TypeError (no implicit conversion of Array into String)
 Statement prints array[0] to target string
 
 GREEN
+
+-----------
+
+# Screen Recording 3
+
+FEATURE TEST
+- Testing that deposit_withdraw.deposit adds the following string to transactions:
+'09/04/2019 || 5000.00 || || 7500.00'
+
+RED
+undefined method 'deposit'
+
+Made deposit method
+
+NEW RED
+Returns nil
+
+Hard-coded the string
+
+GREEN
+
+REFACTOR
+
+  Because the string is hard-coded, the method is not working per the required purpose
+
+FEATURE TEST
+Expect the deposit method to take the information it needs and format it before pushing
+
+RED
+NameError (uninitialized constant DepositWithdraw::DateTime)
+
+-----------
+
+# Screen Recording 4
+
+Required 'date' when running irb
+
+Successfully formats date as required
+
+NEW RED
+Doesn't include rest of string
+
+Made method include ' || '
+
+NEW RED
+Doesn't include amount deposited
+
+Added 'amount' argument to deposit
+
+NEW RED
+TypeError (no implicit conversion of Float into String)
+
+Explicitly converted Float to string
+
+NEW RED
+Now just needs the balance
+
+Added @balance, calculated by adding amount to previous balance
+
+RED
+Returns ["/09/04/2019 || 5000.00 || 7500.00"], need a string, not an array
+
+Targeted array[0]
+
+RED
+Lacks debit field string and has an extra slash before the date
+
+Added debit field and removed slash
+
+GREEN
+
+-----------
+
+# Screen Recording 5
