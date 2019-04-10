@@ -18,5 +18,4 @@ class Account
   def deposit(amount)
     @dw.deposit(amount)
   end
-
 end
