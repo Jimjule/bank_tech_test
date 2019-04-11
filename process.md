@@ -215,3 +215,7 @@ Installed simplecov
 TEST
 - Automate feature test with rspec
 - Tests Account statement method behaves as expected
+
+Three feature tests added to replace console tests, 100% coverage.
+
+GREEN
