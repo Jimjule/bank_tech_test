@@ -65,7 +65,7 @@ Will satisfy the Minimum requirements.
 
   Previous Plan:
 
-  Desposit_Withdrawal----->Statement---------------------------------->
+  Deposit_Withdrawal----->Statement---------------------------------->
   variables -convert-> Array of hashes -convert-> string -read-> string
 
   Proposed Plan:
@@ -119,4 +119,4 @@ or
 
 # Refactor
 
-  Once the account class has been implemented, it's worth refactoring the classes to comply with good coding standards. Potential areas of concern are overloaded classes, and the SRP.
+  Once the account class has been implemented, it's worth refactoring the classes to comply with good coding standards. Potential areas of concern are code that's easy to change, and the SRP.

@@ -1,4 +1,4 @@
-require './deposit_withdraw'
+require_relative 'transaction'
 
 class Statement
 
@@ -7,7 +7,7 @@ class Statement
   end
 
   def show
-    print 'date || credit || debit || balance' + @d.transactions[0]
+    p "date || credit || debit || balance\n" + @d.transactions[0]
   end
 
 end

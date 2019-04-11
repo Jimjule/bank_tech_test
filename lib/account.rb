@@ -1,7 +1,8 @@
-require './statement'
-require './deposit_withdraw'
+require_relative 'statement'
+require_relative 'transaction'
 
 class Account
+  attr_reader :dw
   def initialize
     @s = Statement.new
     @dw = DepositWithdraw.new

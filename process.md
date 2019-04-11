@@ -171,3 +171,41 @@ These classes do not work together because the statement class calls a new insta
 
 FEATURE TEST
 - Account class can call the statement.show method
+
+RED
+No such method
+
+Defined method
+
+NEW RED
+Returns nil
+
+Connected the class, initialized the statement class and called it in the method
+
+GREEN
+
+FEATURE TEST
+- Has a method to call deposit_withdraw.withdraw
+
+RED
+No such method
+
+Defined method, connected the class, initialized DepositWithdraw class and called in method
+
+GREEN
+
+FEATURE TEST
+- Has a method to call deposit_withdraw.deposit
+
+Defined method, connected the class, initialized DepositWithdraw class and called in method
+
+GREEN
+
+
+REFACTOR
+- Removed extra code from deposit_withdraw to streamline methods
+
+FEATURE TEST
+Still working
+
+GREEN

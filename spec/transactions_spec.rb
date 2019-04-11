@@ -1,4 +1,4 @@
-require 'deposit_withdraw'
+require 'transaction'
 
 describe DepositWithdraw do
   it 'exists' do

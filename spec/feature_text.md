@@ -16,3 +16,12 @@ load './deposit_withdraw.rb'
 d = DepositWithdraw.new
 
 d.deposit(5000)
+
+
+-------
+
+load './account.rb'
+
+require 'date'
+
+a = Account.new
