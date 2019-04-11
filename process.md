@@ -209,3 +209,9 @@ FEATURE TEST
 Still working
 
 GREEN
+
+Installed simplecov
+
+TEST
+- Automate feature test with rspec
+- Tests Account statement method behaves as expected

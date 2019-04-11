@@ -120,3 +120,7 @@ or
 # Refactor
 
   Once the account class has been implemented, it's worth refactoring the classes to comply with good coding standards. Potential areas of concern are code that's easy to change, and the SRP.
+
+# Automated testing
+
+  A faster way of developing and refactoring would be to automate my feature tests.
