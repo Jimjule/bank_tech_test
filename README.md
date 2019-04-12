@@ -1,5 +1,24 @@
 # Bank tech test
 
+# Installation
+
+- Clone this repo
+- Navigate to the root in console
+- In console `bundle install`
+
+# Running tests
+
+Once installed:
+- `rspec` to run tests
+- `rubocop` to run the linter
+
+# Running the program
+
+From the root, in the console, run
+- `irb`
+- `load './lib/account.rb'`
+- `require 'date'`
+
 ## What
 
 A console application that has the functionality of an ATM.
@@ -32,3 +51,7 @@ date || credit || debit || balance
 # Progress
 
 Hit Minimum described in plan, plus the withdraw and deposit methods described.
+
+# Approach & Structure
+
+See plan.md

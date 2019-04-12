@@ -219,3 +219,11 @@ TEST
 Three feature tests added to replace console tests, 100% coverage.
 
 GREEN
+
+
+REFACTOR
+
+- Updated DepositWithdraw class name to Transaction to reflect the purpose.
+- Gave descriptive names to instantiated classes
+
+  According to the plan, it's necessary to implement dependency injection to

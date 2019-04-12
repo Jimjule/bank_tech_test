@@ -124,3 +124,7 @@ or
 # Automated testing
 
   A faster way of developing and refactoring would be to automate my feature tests.
+
+# Dependency Injection
+
+  Now that the program works, some higher-level refactoring should be considered, like dependency injection, as the Account class has two dependencies.

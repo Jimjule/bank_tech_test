@@ -1,7 +1,6 @@
 require 'transaction'
 
-describe DepositWithdraw do
+describe Transaction do
   it 'exists' do
-
   end
 end

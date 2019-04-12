@@ -1,22 +1,23 @@
 require_relative 'statement'
 require_relative 'transaction'
 
+# Controller class, instantiates other classes and calls their methods
 class Account
-  attr_reader :dw
+  attr_reader :transaction
   def initialize
-    @s = Statement.new
-    @dw = DepositWithdraw.new
+    @statement = Statement.new
+    @transaction = Transaction.new
   end
 
   def statement
-    @s.show
+    @statement.show
   end
 
   def withdraw(amount)
-    @dw.withdraw(amount)
+    @transaction.withdraw(amount)
   end
 
   def deposit(amount)
-    @dw.deposit(amount)
+    @transaction.deposit(amount)
   end
 end
