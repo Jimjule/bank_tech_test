@@ -2,8 +2,8 @@ require_relative 'transaction'
 
 # Class responsible for printing the transactions array
 class Statement
-  def initialize
-    @transaction = Transaction.new
+  def initialize(transaction = Transaction.new)
+    @transaction = transaction
   end
 
   def show

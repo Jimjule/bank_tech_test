@@ -226,4 +226,7 @@ REFACTOR
 - Updated DepositWithdraw class name to Transaction to reflect the purpose.
 - Gave descriptive names to instantiated classes
 
-  According to the plan, it's necessary to implement dependency injection to
+
+REFACTOR
+- Injected the two other classes into the Account class to remove dependency
+- Doubled the classes in unit tests

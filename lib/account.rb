@@ -4,9 +4,9 @@ require_relative 'transaction'
 # Controller class, instantiates other classes and calls their methods
 class Account
   attr_reader :transaction
-  def initialize
-    @statement = Statement.new
-    @transaction = Transaction.new
+  def initialize(statement = Statement.new, transaction = Transaction.new)
+    @statement = statement
+    @transaction = transaction
   end
 
   def statement

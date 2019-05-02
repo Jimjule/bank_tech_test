@@ -128,3 +128,4 @@ or
 # Dependency Injection
 
   Now that the program works, some higher-level refactoring should be considered, like dependency injection, as the Account class has two dependencies.
+  Eliminating the statement class could also ease dependency.
